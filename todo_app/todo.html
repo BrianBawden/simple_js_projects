@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian's todo</title>
+    <script src="todo.js"></script>
+</head>
+<body>
+    <h1 id="title">Brian's To Do!</h1>
+
+    <div id="todo_input">
+        Enter new task: <input id="new_task"type="text"></input>
+        <input type="button" id="todo_add" value="Add Task" onclick="new_task()"></input>
+    </div>
+
+    <div id="the_list">
+        <ol id="todo_list">
+        </ol>
+    </div>
+    <div id="delete_area">
+        Task number: <input id="del_task" type="text"></input>
+        <button id="delete_btn" onclick="delete_task()" >Delete Task</button>
+        <!-- <button id="delete_all" onclick="delete_all()">Delete All</button> -->
+    </div>
+</body>
+</html>
