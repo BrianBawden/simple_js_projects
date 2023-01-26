@@ -1,0 +1,22 @@
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+#date {
+    width: 10em;
+}
+
+#description {
+    width: 25em;
+}
+
+#amount {
+    width: 10em;
+}
+body {
+    background-color: aqua;
+    text-align: center;
+}
