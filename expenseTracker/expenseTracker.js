@@ -6,4 +6,7 @@ function newExpense() {
     const td = document.createElement("td")
 
     let date = document.getElementById("getDate")
+    let description = document.getElementById("getDescription")
+    let amount = document.getElementById("getAmount")
+
 }
