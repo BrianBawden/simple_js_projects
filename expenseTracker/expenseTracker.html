@@ -9,8 +9,16 @@
 </head>
 <body>
     <h1>Expense Tracker</h1>
-    
 
+
+<div id="inputDiv">
+    Enter new expense: Date<input type="text" id="getDate"></input>
+    Description<input id="getDescription" type="text"></input>
+    Amount <input type="text" id="getAmount"></input>
+    <br>
+    <input type="button" id="addBtn" onclick="newExpense()" value="Add Expense"></input>
+</div>
+<div id="tableDiv">
     <table id="table">
         <tr>
             <td id="date">Date</td>
@@ -18,6 +26,7 @@
             <td id="amount">Amount</td>
         </tr>
     </table>
+</div>
     <script src="expenseTracker.js"></script>
 </body>
 </html>
