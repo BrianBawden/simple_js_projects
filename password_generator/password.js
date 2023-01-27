@@ -1,5 +1,11 @@
 
+const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('')
 
+const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+
+const specialCharacter = '~`! @#$%^&*()_-+={[}]|:;"\'<,>.?/'.split('')
+
+console.log(abcLower)
 
 function run(){
 
@@ -36,3 +42,4 @@ function runSpe() {
     // console.log(specialCh)
     return specialCh
 }
+
