@@ -20,3 +20,16 @@ body {
     background-color: aqua;
     text-align: center;
 }
+
+#addBtn {
+    margin: 10px;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#getDescription{
+    width: 30em;
+}
