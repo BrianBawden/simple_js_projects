@@ -12,18 +12,20 @@
 
 
 <div id="inputDiv">
-    Enter new expense: Date<input type="text" id="getDate"></input>
-    Description<input id="getDescription" type="text"></input>
-    Amount <input type="text" id="getAmount"></input>
+    Enter new expense: 
+    <input placeholder="Date" type="text" id="getDate"></input>
+    <input placeholder="Description" id="getDescription" type="text"></input>
+    <input placeholder="Amount" type="text" id="getAmount"></input>
     <br>
     <input type="button" id="addBtn" onclick="newExpense()" value="Add Expense"></input>
 </div>
+
 <div id="tableDiv">
     <table id="table">
         <tr>
-            <td id="date">Date</td>
-            <td id="description">Description</td>
-            <td id="amount">Amount</td>
+            <th id="date">Date</th>
+            <th id="description">Description</th>
+            <th id="amount">Amount</th>
         </tr>
     </table>
 </div>
