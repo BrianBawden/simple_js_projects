@@ -1,34 +1,20 @@
-
+// create arrays with possible characters for the password.
 const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
 
 const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 const specialCharacter = '~`! @#$%^&*()_-+={[}]|:;"\'<,>.?/'.split('');
 
-
-
-function run(){
-
-    let leng = runLen()
-    console.log(leng)
-
-    let up = runUp()
-    console.log(up)
-
-    let spe = runSpe()
-    console.log(spe)
-
-};
-
+// this function will return the length of password chosen by user.
 function runLen(){
     // get length for password
     let pwLength =document.querySelector("#passLength");
     let pwLOutput = pwLength.value;
 
     return pwLOutput
-    // console.log(pwLOutput)
 }
 
+// This function will return true or false based on user chose yes or no for uppercase letters.
 function runUp(){
     // check for upper case
     let upper = document.querySelector('input[name="upper"]:checked').value
@@ -38,10 +24,10 @@ function runUp(){
         return false
     }
     
-    // console.log(upper)
     return upper
 }
 
+// the runSpe function returns true or false based on user chose to have special characters.
 function runSpe() {
     // check for special character
     let specialCh = document.querySelector("input[name='spclC']:checked").value
@@ -50,11 +36,10 @@ function runSpe() {
     } else {
         return false
     }
-    // console.log(specialCh)
-    // return specialCh
 }
 
-function makePW(len, cap, sym) {
+// the possPw function takes two arguments true or false to add uppercase and special characters to array of possible characters for password.
+function possPw(cap, sym) {
     
     let possiblePw = [];
 
@@ -68,4 +53,8 @@ function makePW(len, cap, sym) {
     }
 
     return possiblePw
+}
+
+function mkPw(list, len) {
+    
 }
