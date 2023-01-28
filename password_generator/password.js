@@ -1,9 +1,9 @@
 // create arrays with possible characters for the password.
-const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
+const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789';
 
-const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-const specialCharacter = '~`! @#$%^&*()_-+={[}]|:;"\'<,>.?/'.split('');
+const specialCharacter = '!@#$%^&?';
 
 // this function will return the length of password chosen by user.
 function runLen(){
@@ -55,6 +55,12 @@ function possPw(cap, sym) {
     return possiblePw
 }
 
+// function mkPw takes two arguments a list and the length of the list and will post new pass word to #finishedPW.
 function mkPw(list, len) {
-    
+    let pw =  [];
+    for (let i = 0; i < len; i++) {
+        let randomNum = Math.floor(Math.random() * list.length);
+        pw += list[randomNum]
+    }
+    document.getElementById("finishedPW").innerHTML = pw;
 }
