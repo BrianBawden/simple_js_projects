@@ -1,11 +1,11 @@
 
-const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('')
+const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
 
-const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-const specialCharacter = '~`! @#$%^&*()_-+={[}]|:;"\'<,>.?/'.split('')
+const specialCharacter = '~`! @#$%^&*()_-+={[}]|:;"\'<,>.?/'.split('');
 
-console.log(abcLower)
+
 
 function run(){
 
@@ -24,7 +24,7 @@ function runLen(){
     // get length for password
     let pwLength =document.querySelector("#passLength");
     let pwLOutput = pwLength.value;
-    
+
     return pwLOutput
     // console.log(pwLOutput)
 }
@@ -32,6 +32,12 @@ function runLen(){
 function runUp(){
     // check for upper case
     let upper = document.querySelector('input[name="upper"]:checked').value
+    if (upper === "yes") {
+        return true
+    } else {
+        return false
+    }
+    
     // console.log(upper)
     return upper
 }
@@ -39,7 +45,27 @@ function runUp(){
 function runSpe() {
     // check for special character
     let specialCh = document.querySelector("input[name='spclC']:checked").value
+    if (specialCh === "yes") {
+        return true
+    } else {
+        return false
+    }
     // console.log(specialCh)
-    return specialCh
+    // return specialCh
 }
 
+function makePW(len, cap, sym) {
+    
+    let possiblePw = [];
+
+    possiblePw += abcLower
+
+    if (cap) {
+        possiblePw += abcUpper
+    } 
+    if (sym) {
+        possiblePw += specialCharacter
+    }
+
+    return possiblePw
+}
