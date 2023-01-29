@@ -62,5 +62,6 @@ function mkPw(list, len) {
         let randomNum = Math.floor(Math.random() * list.length);
         pw += list[randomNum]
     }
+    console.log(list.length)
     document.getElementById("finishedPW").innerHTML = pw;
 }
