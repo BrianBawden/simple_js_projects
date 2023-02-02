@@ -30,14 +30,12 @@ h1 {
 #tl, #tm, #tr, #mr, #mm, #ml {
     border-bottom: 4px solid #7d9407;
     width:62px; height:62px;
-    padding: 0%;
 }
 
 #tm, #mm, #bm {
     border-right: 4px solid #7d9407;
     border-left: 4px solid #7d9407;
     width:62px; height:62px;
-    padding: 0%;
 
 
 }

@@ -6,6 +6,8 @@ function addLetter(id){
 
         if (space === "X") {
             space = "O"
+        } else if (space === "O") {
+            space = " "
         } else {
             space = "X"
         }
