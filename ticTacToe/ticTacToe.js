@@ -1,4 +1,5 @@
-console.log('Hi')
+
+
 let space = "X"
 function addLetter(id){
 
@@ -11,5 +12,5 @@ function addLetter(id){
         } else {
             space = "X"
         }
-
 }
+
