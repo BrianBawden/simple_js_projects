@@ -53,6 +53,10 @@ button {
     background-color: #7d9407;
     color: rgb(218, 224, 228);
     font-size: 150%;
+}
 
+#winner {
 
+    font-size: 150%;
+    color: red;
 }

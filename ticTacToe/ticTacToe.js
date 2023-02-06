@@ -7,15 +7,15 @@ function addLetter(id){
 
         document.querySelector("#" + id).innerHTML = space;
 
+        checkWinner();
+
+
         if (space === "X") {
             space = "O"
-        } else if (space === "O") {
-            space = " "
         } else {
             space = "X"
         };
 
-        checkWinner();
 
 }
 
@@ -29,5 +29,32 @@ function checkWinner() {
     let br = document.querySelector("#br").innerText;
     let bl = document.querySelector("#bl").innerText;
     let bm = document.querySelector("#bm").innerText;
+
+    switch ("X") {
+        case tl && tm && tr:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case ml, mm, mr:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case bl, bm, br:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case tl, mm, br:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case tr, mm, bl:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case tl, ml, bl:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case tm, mm, bm:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+        case tr, mr, br:
+            document.querySelector("#winner").innerHTML = space + " is the WINNER";
+            break
+    }
 
 }

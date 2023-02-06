@@ -3,7 +3,7 @@ const abcLower = 'abcdefghijklmnopqrstuvwxyz0123456789';
 
 const abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-const specialCharacter = '!@#$%^&?';
+const specialCharacter = '!@#$%^&';
 
 // this function will return the length of password chosen by user.
 function runLen(){
