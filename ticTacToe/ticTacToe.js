@@ -30,31 +30,64 @@ function checkWinner() {
     let bl = document.querySelector("#bl").innerText;
     let bm = document.querySelector("#bm").innerText;
 
-    switch ("X") {
-        case tl && tm && tr:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case ml, mm, mr:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case bl, bm, br:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case tl, mm, br:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case tr, mm, bl:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case tl, ml, bl:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case tm, mm, bm:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
-        case tr, mr, br:
-            document.querySelector("#winner").innerHTML = space + " is the WINNER";
-            break
+    if (tl ==="X" && tm ==="X" && tr ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tl ==="O" && tm ==="O" && tr ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(ml ==="X" && mm ==="X" && mr ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (ml ==="O" && mm ==="O" && mr ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(bl ==="X" && bm ==="X" && br ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (bl ==="O" && bm ==="O" && br ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tl ==="X" && ml ==="X" && bl ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tl ==="O" && ml ==="O" && bl ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(tm ==="X" && mm ==="X" && bm ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tm ==="O" && mm ==="O" && bm ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(tr ==="X" && mr ==="X" && br ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tr ==="O" && mr ==="O" && br ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(tl ==="X" && mm ==="X" && br ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tl ==="O" && mm ==="O" && br ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if(tr ==="X" && mm ==="X" && bl ==="X"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
+    } else if (tr ==="O" && mm ==="O" && bl ==="O"){
+        document.querySelector("#winner").innerHTML = space + " is the WINNER";
     }
+//     switch ("X") {
+//         case tl && tm && tr:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case ml, mm, mr:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case bl, bm, br:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case tl, mm, br:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case tr, mm, bl:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case tl, ml, bl:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case tm, mm, bm:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//         case tr, mr, br:
+//             document.querySelector("#winner").innerHTML = space + " is the WINNER";
+//             break
+//     }
 
 }
